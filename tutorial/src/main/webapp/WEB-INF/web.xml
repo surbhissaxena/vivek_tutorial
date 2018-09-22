@@ -1,0 +1,370 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+ <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>controller.NewServlet</servlet-class>
+    </servlet>
+  	
+  	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.ss.controller.LoginController</servlet-class>
+		 <load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>DeleteController</servlet-name>
+		<servlet-class>com.ss.controller.DeleteController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpdateController</servlet-name>
+		<servlet-class>com.ss.controller.UpdateController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>usersearchcontroller</servlet-name>
+		<servlet-class>com.ss.controller.UserSearchController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>adduser</servlet-name>
+		<servlet-class>com.ss.controller.registerUserController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>showStudentRecord</servlet-name>
+		<servlet-class>com.ss.controller.ShowStuRecordController</servlet-class>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>forgotPasswordController</servlet-name>
+		<servlet-class>com.ss.controller.ForgotPasswordController</servlet-class>
+	</servlet>
+
+    <servlet>
+		<servlet-name>VerifyController</servlet-name>
+		<servlet-class>com.ss.controller.VerifyController</servlet-class>
+	</servlet>
+	
+   <servlet>
+		<servlet-name>verifycon</servlet-name>
+		<servlet-class>com.ss.controller.VerifyController</servlet-class>
+	</servlet>
+
+    <servlet>
+    	<servlet-name>PaginationController</servlet-name>
+    	<servlet-class>com.ss.controller.PaginationController</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>ResetPassword</servlet-name>
+    	<servlet-class>com.ss.controller.UserResetPassword</servlet-class>
+    </servlet>
+
+       <servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.ss.controller.LogOutController</servlet-class>
+	  </servlet>
+       <servlet>
+       	<servlet-name>ResultController</servlet-name>
+       	<display-name>ResultController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.ResultController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>AddCollegeDataController</servlet-name>
+       	<servlet-class>com.ss.controller.AddCollegeDataController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>ShowCollegeRecordController</servlet-name>
+       	<servlet-class>com.ss.controller.ShowCollegeRecordController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>DeleteCollegeController</servlet-name>
+       	<display-name>DeleteCollegeController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.DeleteCollegeController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>UpdateCollegeController</servlet-name>
+       	<servlet-class>com.ss.controller.UpdateCollegeController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>ViewResultController</servlet-name>
+       	<servlet-class>com.ss.controller.ViewResultController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>ResultByIdController</servlet-name>
+       	<display-name>ResultByIdController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.ResultByIdController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>GetCollegeByPercentage</servlet-name>
+       	<display-name>GetCollegeByPercentage</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.GetCollegeByPercentage</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>SearchCollegeController</servlet-name>
+       	<display-name>SearchCollegeController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.SearchCollegeController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>GetAllStudentController</servlet-name>
+       	<display-name>GetAllStudentController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.GetAllStudentController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>GetAllOperatorController</servlet-name>
+       	<servlet-class>com.ss.controller.GetAllOperatorController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>AboutMeController</servlet-name>
+       	<display-name>AboutMeController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.AboutMeController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>AddSubjectController</servlet-name>
+       	<display-name>AddSubjectController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.AddSubjectController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>GetAllSubjectController</servlet-name>
+       	<display-name>GetAllSubjectController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.GetAllSubjectController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>AddQuestionController</servlet-name>
+       	<display-name>AddQuestionController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.AddQuestionController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>GetAllQuestionController</servlet-name>
+       	<display-name>GetAllQuestionController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.GetAllQuestionController</servlet-class>
+       </servlet>
+       <servlet>
+       	<servlet-name>AddTutorialController</servlet-name>
+       	<display-name>AddTutorialController</display-name>
+       	<description></description>
+       	<servlet-class>com.ss.controller.AddTutorialController</servlet-class>
+       </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/chooseSubject</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/exit</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/exam</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping> 
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/nextQuestion</url-pattern>
+    </servlet-mapping>
+   
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/registered</url-pattern>
+    </servlet-mapping>
+    
+     <!-- <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping> -->
+    
+    <!-- <servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping> -->
+	
+
+
+    <servlet-mapping>
+		<servlet-name>ResetPassword</servlet-name>
+		<url-pattern>/processChangePWD</url-pattern>
+	</servlet-mapping>
+
+
+    <servlet-mapping>
+		<servlet-name>PaginationController</servlet-name>
+		<url-pattern>/pagination</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>verifycon</servlet-name>
+		<url-pattern>/Change Password</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>VerifyController</servlet-name>
+		<url-pattern>/verify</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>forgotPasswordController</servlet-name>
+		<url-pattern>/forgotPassword</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteController</servlet-name>
+		<url-pattern>/deleteuser</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>UpdateController</servlet-name>
+		<url-pattern>/updateuser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>usersearchcontroller</servlet-name>
+		<url-pattern>/usersearch</url-pattern>
+	</servlet-mapping>
+	
+    <servlet-mapping>
+		<servlet-name>adduser</servlet-name>
+		<url-pattern>/registeruser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>showStudentRecord</servlet-name>
+		<url-pattern>/showstudentrecord</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+		
+	
+	<!-- *************************** -->
+	
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>ResultController</servlet-name>
+    	<url-pattern>/ResultController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>AddCollegeDataController</servlet-name>
+    	<url-pattern>/collegedtaregister</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+    	<servlet-name>ShowCollegeRecordController</servlet-name>
+    	<url-pattern>/showcollegerecord</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>DeleteCollegeController</servlet-name>
+    	<url-pattern>/deletecollege</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>UpdateCollegeController</servlet-name>
+    	<url-pattern>/updatecollege</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>ViewResultController</servlet-name>
+    	<url-pattern>/viewresult</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>ResultByIdController</servlet-name>
+    	<url-pattern>/viewresultbyid</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GetCollegeByPercentage</servlet-name>
+    	<url-pattern>/cutoffno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>SearchCollegeController</servlet-name>
+    	<url-pattern>/collegesearch</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GetAllStudentController</servlet-name>
+    	<url-pattern>/showallstudentrecord</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GetAllOperatorController</servlet-name>
+    	<url-pattern>/showalloperatorrecord</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>AboutMeController</servlet-name>
+    	<url-pattern>/aboutme</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>AddSubjectController</servlet-name>
+    	<url-pattern>/AddSubjectController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GetAllSubjectController</servlet-name>
+    	<url-pattern>/GetAllSubjectController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>AddQuestionController</servlet-name>
+    	<url-pattern>/AddQuestionController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>GetAllQuestionController</servlet-name>
+    	<url-pattern>/GetAllQuestionController</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    	<servlet-name>AddTutorialController</servlet-name>
+    	<url-pattern>/AddTutorialController</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+		<session-timeout>1</session-timeout>
+	</session-config>
+	
+	<welcome-file-list>
+		<welcome-file>/jsp/index.jsp</welcome-file>
+	</welcome-file-list> 
+  
+</web-app>
